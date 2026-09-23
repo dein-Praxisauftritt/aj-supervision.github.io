@@ -84,6 +84,17 @@
         </div>
 
         <form id="contact-form" action="https://formspree.io/f/mdallngb" method="POST" novalidate>
+
+          <!-- Spamschutz: fuer Besucher unsichtbar, wird nur von Bots ausgefuellt -->
+          <div aria-hidden="true" style="position:absolute; left:-9999px; top:-9999px; width:1px; height:1px; overflow:hidden;">
+            <label for="_gotcha">Dieses Feld bitte leer lassen</label>
+            <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <input type="hidden" name="_ts" id="form-ts" value="">
+          <input type="hidden" name="_subject" value="Neue Anfrage über aj-supervision.de">
+
           <div class="grid-2" style="gap:1rem;">
             <div class="form-group">
               <label class="form-label" for="name">Name *</label>
@@ -134,10 +145,31 @@
 
         <div class="contact-info">
           <div class="contact-info__item">
+            <div class="contact-info__icon"><div class="icon-b" style="margin-bottom:0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div></div>
+            <div>
+              <div class="contact-info__label">E-Mail</div>
+              <div class="contact-info__value"><a href="mailto:kontakt@aj-supervision.de" style="color:var(--text);">kontakt@aj-supervision.de</a></div>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><div class="icon-b" style="margin-bottom:0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></div></div>
+            <div>
+              <div class="contact-info__label">Standort</div>
+              <div class="contact-info__value">Wiesbaden · im gesamten Rhein-Main-Gebiet</div>
+            </div>
+          </div>
+          <div class="contact-info__item">
             <div class="contact-info__icon"><div class="icon-b" style="margin-bottom:0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg></div></div>
             <div>
               <div class="contact-info__label">Online-Supervision</div>
-              
+              <div class="contact-info__value">Termine sind auch per Videokonferenz möglich</div>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><div class="icon-b" style="margin-bottom:0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div></div>
+            <div>
+              <div class="contact-info__label">Antwortzeit</div>
+              <div class="contact-info__value">In der Regel innerhalb von 24 Stunden</div>
             </div>
           </div>
         </div>
@@ -174,7 +206,6 @@
         <div class="footer__heading">Kontakt</div>
         <ul class="footer__links">
           <li><a href="mailto:kontakt@aj-supervision.de">kontakt@aj-supervision.de</a></li>
-          <li></li>
         </ul>
         <div style="margin-top:1.5rem;">
           <div class="footer__heading">Rechtliches</div>
